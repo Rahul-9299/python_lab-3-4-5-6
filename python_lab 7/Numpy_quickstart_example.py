@@ -50,12 +50,12 @@ multiplication1 = np.array([1,2,3]) * np.array([4,5,6])
 print("Multiplication Array:",multiplication1)
 
 #Matrix multiplication.
-matrix_mult1 =np.dot(np.array([1,2],[3,4]),np.array([5,6],[7,8]))
+matrix_mult1 =np.dot(np.array([[1,2],[3,4]]),np.array([[5,6],[7,8]]))
 print("Matrix Multiplication:",matrix_mult1)
 
 #4. Universal function.
 #Compute the sine of an array.
-sine = np.sine(np.pi/2)
+sine = np.sin(np.pi/2)
 print("Sine:",sine)
 
 #Compute the exponential of an array.
@@ -68,7 +68,7 @@ print("Square root:",square_root)
 
 #5.Indexing, Slicing and Iterating.
 #Indexing
-indexing1 =np.array(1,2,3,4,5)[2]
+indexing1 =np.array([1,2,3,4,5])[2]
 print("Indexing:",indexing1)
 
 #Iterating
@@ -76,7 +76,7 @@ iterating1 = [x for x in np.array([1,2,3])]
 print("Iterating:",iterating1)
 
 #Slicing
-slicing1 = np.array(1,2,3,4,5)[1:4]
+slicing1 = np.array([1,2,3,4,5])[1:4]
 print("Slicing:",slicing1)
 
 #6.shape Manipulation
@@ -94,7 +94,7 @@ vstacked = np.vstack((np.array([1,2,3]),np.array([4,5,6])))
 print("Vertically Stacked Array:",vstacked)
 
 #stacked arrays horizontally.
-hstacked = np.hstack((np.array([1,2,3],np.array([4,5,6]))))
+hstacked = np.hstack((np.array([1,2,3]),np.array([4,5,6])))
 print("Horizantally Stacked Array:", hstacked)
 
 #split an array.
@@ -131,6 +131,7 @@ coefficient =np.array([[3,1],[1,2]])
 constants = np.array([9,8])
 solution = np.linalg.solve(coefficient,constants)
 print("Solution of linear equations :",solution)
+
 
 
 
