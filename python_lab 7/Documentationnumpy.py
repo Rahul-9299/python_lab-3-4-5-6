@@ -70,7 +70,7 @@ dot_prod1 = np.dot([1,2],[3,4])
 print("Dot Product:",dot_prod1)
 
 #np.linalg.inv(): Compute the inverse of a matrix.
-matrix1 = np.array([1,2],[3,4])
+matrix1 = np.array([[1,2],[3,4]])
 inv_matrix1 = np.linalg.inv(matrix1)
 print("Inverse Matrix:",inv_matrix1)
 
@@ -90,4 +90,5 @@ print("All true:",all_T)
 
 #np.any() : Test if any elements is True.
 any_T = np.any([True,False])
+
 print("Any true:",any_T)
